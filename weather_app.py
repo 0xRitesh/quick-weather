@@ -7,6 +7,8 @@ from datetime import datetime
 from matplotlib import pyplot as plt
 import plotly.graph_objects as go
 
+from boto.s3.connection import S3Connection
+s3 = S3Connection(os.environ['API_KEY'])
 
 API_KEY = os.environ['API_KEY']
 owm = pyowm.OWM(API_KEY)
