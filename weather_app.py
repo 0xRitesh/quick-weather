@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 import plotly.graph_objects as go
 
 
-API_KEY = 'f09211ef70c0fa5f08952d0bf4e9846f'
+API_KEY = os.environ['API_KEY']
 owm = pyowm.OWM(API_KEY)
 mgr=owm.weather_manager()
 
